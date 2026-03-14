@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title> Event Type Details</title>
+    </head>
+    <body class = "container">
+        <h1><%=title%></h1>
+        <table border="1" width="80">
+            <tr>
+                <th>EventId</th>
+                <th>Eventtype</th>
+                <th>Description</th>
+                <th>Delete</th>
+                <th>Update</th>
+            </tr>
+            <tr>
+                <% if(event.length>0){%>
+                    <% for(var i=0;i<event.length;i++){%>
+                        <tr>
+                            <td><%-event[i].eventid%></td>
+                            <td><%-event[i].eventtype%></td>
+                            <td><%-event[i].description></td>
+                            <td><a href="/delete-event? id=<%-event[i].eventid%>">Delete</a></td>
+                            <td><a href="/update-event? id=<%-event[i].eventid%>">Update</a></td>
+                        </tr>
+                    <%}%>
+                <%}else{%>
+                    <h1>Data not found</h1>
+                <%}%>
+            </tr>
+        </table>
+    </body>
+ </html>
