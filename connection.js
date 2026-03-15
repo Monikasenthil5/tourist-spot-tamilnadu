@@ -3,8 +3,8 @@ var mysql2=require("mysql2");
 var connection= mysql2.createConnection({
     host:"localhost",
     user:"root",
-    password:"mysql",
-    database:"TamilnaduTales"
+    password:"password",
+    database:"database_name"
   });
   
   
