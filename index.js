@@ -155,8 +155,8 @@ app.get('/zoo.html', function(request, response) {
 var connection= mysql2.createConnection({
   host:"localhost",
   user:"root",
-  password:"Monika05",
-  database:"TamilnaduTales"
+  password:"password",
+  database:"database_name"
 });
 
 
@@ -207,8 +207,8 @@ app.post('/',function(request,response){
    port: 465,
    secure: true,
    auth: {
-     user: 'mctntales@gmail.com',
-     pass: 'wyskvfaqxjoeqmao'
+     user: 'mail@gmail.com',
+     pass: 'password'
    }
  });
 
