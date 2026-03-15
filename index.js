@@ -214,7 +214,7 @@ app.post('/',function(request,response){
 
  //Define email options
  const mailOptions = {
-   from: 'mctntales@gmail.com',
+   from: 'mail@gmail.com',
    to: email,
    subject: "THANK YOU for registering in our Website Tamilnadu Tales",
    text: "You have successfully created an account at our website...Enjoy shopping and exploring"
